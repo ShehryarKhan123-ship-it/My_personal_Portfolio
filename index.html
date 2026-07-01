@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shehryar Khan | AI & Computer Vision Engineer Portfolio</title>
+  <meta name="description" content="AI & Machine Learning Engineer specializing in Computer Vision pipelines, Agentic AI, and RAG systems. SZABIST AI graduate based in Islamabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Indicator -->
+  <div id="scroll-indicator"></div>
+
+  <!-- Particles background -->
+  <canvas id="network-canvas"></canvas>
+
+  <div class="glow-orb glow-1"></div>
+  <div class="glow-orb glow-2"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">SK<span>.ai</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">// about</a></li>
+        <li><a href="#pipeline">// pipelines</a></li>
+        <li><a href="#work">// selected_work</a></li>
+        <li><a href="#skills">// toolkit</a></li>
+        <li><a href="#contact">// contact</a></li>
+      </ul>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Open for Projects</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Islamabad, PK | Lead AI Engineer</p>
+        <h1 class="name">Shehryar Khan<br><em>Builds systems that see, reason, and act.</em></h1>
+        <p class="hero-sub">
+          I design and deploy <strong>agentic AI workflows</strong> and <strong>computer vision pipelines</strong>. From RAG-powered spatial search architectures to real-time object detection models, I build AI that operates on real infrastructure, not just Jupyter Notebooks.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Start a project &rarr;</a>
+          <a href="#work" class="btn btn-ghost">See the work</a>
+        </div>
+
+        <!-- Scroll-controlled Handshake Animation -->
+        <div class="handshake-wrapper">
+          <img src="assets/hand_human.png" class="handshake-img hand-human" alt="Human hand extending">
+          <img src="assets/hand_robot.png" class="handshake-img hand-robot" alt="Robotic hand extending">
+          <div class="handshake-spark"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="sec-head reveal">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Machine Learning Engineer working at the intersection of <strong>computer vision</strong> and <strong>agentic AI</strong>, training models that perceive the physical world (YOLO, SAM2) and orchestrating the reasoning layers (LangGraph, RAG) that enable systems to interact autonomously.
+          </p>
+          <p>
+            Most recently at <strong>NeuralSeek</strong>, I engineered production-grade agentic pipelines and fine-tuned Vision-Language Models (VLMs) using LoRA. I designed CAD-integrated RAG structures that slashed domain-specific reasoning failures while keeping deployments optimized for edge hardware. Previously, at <strong>Arch Technologies</strong>, I managed data validation, preprocessing, and training steps for multi-tiered NLP and CV systems.
+          </p>
+          <p>
+            I am currently completing my BS in Artificial Intelligence (Robotics &amp; AI Focus) at <strong>SZABIST University</strong>, offering freelance engineering and enterprise-grade consulting services in agentic AI.
+          </p>
+        </div>
+        <div class="fact-card reveal">
+          <h3 class="mono" style="font-size: 13px; color: var(--teal); border-bottom: 1px dashed var(--border); padding-bottom: 10px; margin-bottom: 8px;">// system_info</h3>
+          <ul class="fact-list">
+            <li><span>Location</span><span>Islamabad, PK (Remote ok)</span></li>
+            <li><span>Core Focus</span><span>Computer Vision &amp; Agentic AI</span></li>
+            <li><span>Education</span><span>BS Artificial Intelligence, SZABIST</span></li>
+            <li><span>Current Status</span><span>Available for contracts</span></li>
+            <li><span>Core Stack</span><span>PyTorch · LangChain · OpenCV</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="pipeline">
+      <div class="sec-head reveal">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">Human &amp; Robot Integration</h2>
+      </div>
+      <p class="sec-desc reveal">
+        Visualizing the seamless handshaking and synergy between human control loops and autonomous robotic systems.
+      </p>
+
+      <div class="video-container reveal">
+        <video class="showcase-video" src="assets/robotics.mp4" autoplay loop muted playsinline controls></video>
+      </div>
+    </section>
+
+    <!-- Selected Work / Spotlight Section -->
+    <section id="work">
+      <div class="sec-head reveal">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">Selected Projects</h2>
+      </div>
+      <p class="sec-desc reveal">Featured builds across computer vision segmentations, offline-first RAG systems, and medical diagnostics.</p>
+
+      <!-- Spotlight: Oil Spill -->
+      <div class="spotlight-card reveal">
+        <div class="spotlight-info">
+          <span class="spotlight-tag">Featured Project</span>
+          <h3 class="spotlight-title">Oil Spill Segmentation on SAR Imagery</h3>
+          <p class="spotlight-desc">
+            An advanced computer vision system designed to locate and segment oceanic oil slicks from Synthetic Aperture Radar (SAR) satellite imagery. SAR imagery provides robust night-and-day detection through cloud cover, but has high speckle noise. Built using modified U-Net and ResNet structures, achieving high detection resilience.
+          </p>
+          <div class="spotlight-stats">
+            <div class="stat-box">
+              <div class="stat-val">0.73</div>
+              <div class="stat-lbl">Overall IoU</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val">94.6%</div>
+              <div class="stat-lbl">Pixel Accuracy</div>
+            </div>
+          </div>
+          <div class="spotlight-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">SAR Radar</span>
+            <span class="tag">U-Net</span>
+            <span class="tag">Image Segmentation</span>
+          </div>
+        </div>
+
+        <!-- Slider element -->
+        <div class="slider-wrapper" id="oil-spill-slider">
+          <img class="slider-img slider-before" src="assets/sar_original.png" alt="Raw SAR ocean radar capture">
+          <div class="slider-after" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+            <img class="slider-img" src="assets/sar_segmented.png" alt="AI segmented ocean oil spill">
+          </div>
+          <div class="slider-handle" style="left: 50%;">
+            <div class="slider-handle-button"></div>
+          </div>
+          <span class="slider-label label-before">RAW SAR</span>
+          <span class="slider-label label-after">AI SEGMENTED</span>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="proj-grid reveal">
+        
+        <!-- NeutraVault -->
+        <div class="proj-card">
+          <span class="proj-year">2025</span>
+          <h3 class="proj-title">NeutraVault</h3>
+          <p class="proj-desc">An API-free, GPU-independent RAG chatbot built for offline document analysis. Utilizes high-performance local vector search for highly sensitive corporate data constraints.</p>
+          <div class="proj-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">Sentence Transformers</span>
+          </div>
+        </div>
+
+        <!-- Phishing Detection -->
+        <div class="proj-card">
+          <span class="proj-year">2025</span>
+          <h3 class="proj-title">Hybrid Phishing Detection</h3>
+          <p class="proj-desc">A hybrid machine learning URL threat identification framework integrating deep language classification and tree-based modeling with a Telegram alert bot.</p>
+          <div class="proj-tags">
+            <span class="tag">BERT</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Telegram API</span>
+          </div>
+        </div>
+
+        <!-- Medi-Scan AI -->
+        <div class="proj-card">
+          <span class="proj-year">2025</span>
+          <h3 class="proj-title">Medi-Scan AI</h3>
+          <p class="proj-desc">Transformer-based language model trained to scan structured and unstructured clinical histories to predict infectious disease risks with diagnostic metrics.</p>
+          <div class="proj-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">Medical NLP</span>
+          </div>
+        </div>
+
+        <!-- Brain Tumour -->
+        <div class="proj-card">
+          <span class="proj-year">2024</span>
+          <h3 class="proj-title">Brain Tumour Detection</h3>
+          <p class="proj-desc">Real-time object localization and boundary delineation pipeline pairing YOLOv11 detectors with SAM2 segmentation wrappers for MRI scans.</p>
+          <div class="proj-tags">
+            <span class="tag">YOLOv11</span>
+            <span class="tag">SAM2</span>
+            <span class="tag">OpenCV</span>
+          </div>
+        </div>
+
+        <!-- HR Analyzer -->
+        <div class="proj-card">
+          <span class="proj-year">2024</span>
+          <h3 class="proj-title">HR Resume Analyzer</h3>
+          <p class="proj-desc">Automated candidate matching processor utilizing text preprocessing, semantic ranking vectors, and classification models to match resumes to jobs.</p>
+          <div class="proj-tags">
+            <span class="tag">NLTK</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Cosine Sim</span>
+          </div>
+        </div>
+
+        <!-- Text Summarizer -->
+        <div class="proj-card">
+          <span class="proj-year">2024</span>
+          <h3 class="proj-title">Advanced Summarizer</h3>
+          <p class="proj-desc">Abstractive sequence-to-sequence summarization architecture optimized for semantic compression of long-form reports.</p>
+          <div class="proj-tags">
+            <span class="tag">Hugging Face</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Seq2Seq</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="sec-head reveal">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+        
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <h3 class="t-role">AI Agent Builder Intern</h3>
+          <p class="t-org">NeuralSeek — Remote</p>
+          <p class="t-meta">Oct 2025 – Nov 2025</p>
+          <ul class="t-list">
+            <li>Engineered autonomous reasoning workflows using LangGraph and advanced RAG architectures for complex decision mapping.</li>
+            <li>Designed AI-driven CAD spatial models and indexed technical documentation to automate parts query response systems.</li>
+            <li>Fine-tuned multimodal LLMs/VLMs with PyTorch and LoRA weights, boosting specific engineering query accuracy by 70%.</li>
+            <li>Collaborated on building visual reasoning agent architectures that combine structural camera feeds with reasoning.</li>
+          </ul>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <h3 class="t-role">Machine Learning Intern</h3>
+          <p class="t-org">Arch Technologies — Remote</p>
+          <p class="t-meta">Apr 2025 – Jun 2025</p>
+          <ul class="t-list">
+            <li>Built custom scripts for data preprocessing, outlier clearing, and automated pipeline validation using PyTorch and Scikit-learn.</li>
+            <li>Assisted in end-to-end training configurations and evaluation benchmarks for natural language classifications and object detection.</li>
+          </ul>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <h3 class="t-role">Volunteer</h3>
+          <p class="t-org">Pakistan Red Crescent Society — Islamabad</p>
+          <p class="t-meta">Oct 2023 – Oct 2024</p>
+          <ul class="t-list">
+            <li>Organized local health and hygiene programs, translating technical safety guidelines into accessible public materials.</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="sec-head reveal">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">Technical Toolkit</h2>
+      </div>
+      <div class="skills-grid">
+        
+        <div class="skill-group reveal">
+          <h3>Languages &amp; Frameworks</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">C++</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">LangGraph</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Docker</span>
+            <span class="chip">TFLite</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>AI/ML Specialties</h3>
+          <div class="chip-row">
+            <span class="chip">Computer Vision (CV)</span>
+            <span class="chip">Agentic AI Workflows</span>
+            <span class="chip">RAG Systems</span>
+            <span class="chip">Model Fine-tuning</span>
+            <span class="chip">Multimodal VLMs</span>
+            <span class="chip">Edge AI Deployment</span>
+            <span class="chip">Visual SLAM</span>
+            <span class="chip">Reinforcement Learning (RLHF)</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Tools &amp; Infrastructure</h3>
+          <div class="chip-row">
+            <span class="chip">AWS</span>
+            <span class="chip">Git / CI-CD</span>
+            <span class="chip">SQL Databases</span>
+            <span class="chip">Weights &amp; Biases (W&amp;B)</span>
+            <span class="chip">Jupyter Ecosystem</span>
+            <span class="chip">Google Colab Pro</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip">English — Professional</span>
+            <span class="chip">Urdu — Native</span>
+            <span class="chip">Pashto — Native</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Recruiter Command Terminal -->
+      <div class="terminal-wrapper reveal">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <div class="t-close"></div>
+            <div class="t-min"></div>
+            <div class="t-max"></div>
+          </div>
+          <div class="terminal-title">sk-shell v1.0.4 — bash</div>
+          <div style="width: 30px;"></div> <!-- Spacer -->
+        </div>
+        <div class="terminal-body" id="terminal-output">
+          <canvas id="matrix-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: none; z-index: 10;"></canvas>
+          <div class="terminal-welcome">
+            <pre style="font-family: var(--font-mono); font-size: 8px; line-height: 1.1; margin-bottom: 12px; color: var(--term-color, #34d399); overflow-x: auto; pointer-events: none; user-select: none;">
+  _____ _    _ ______ _    _ _____ __     __  _____          
+ / ____| |  | |  ____| |  | |  __ \ \   / / / ____|  /\     
+| (___ | |__| | |__  | |__| | |__) \ \_/ / | |  __  /  \    
+ \___ \|  __  |  __| |  __  |  _  / \   /  | | |_ |/ /\ \   
+ ____) | |  | | |____| |  | | | \ \  | |   | |__| / ____ \  
+|_____/|_|  |_|______|_|  |_|_|  \_\ |_|    \_____/_/    \_\</pre>
+            Welcome to Shehryar's command console.<br>
+            Type <span class="accent-teal">help</span> to view available terminal commands, or click the shortcuts below.
+          </div>
+        </div>
+        <div class="terminal-input-row" style="padding: 12px 20px; background: #0c1410;">
+          <span class="prompt-symbol">recruiter@shehryar-portfolio:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" placeholder="Type command here..." autofocus>
+        </div>
+        <div class="terminal-shortcuts">
+          <span>Preset commands:</span>
+          <button class="cmd-btn" data-cmd="about">about</button>
+          <button class="cmd-btn" data-cmd="skills">skills</button>
+          <button class="cmd-btn" data-cmd="experience">experience</button>
+          <button class="cmd-btn" data-cmd="sar-info">sar-info</button>
+          <button class="cmd-btn" data-cmd="sys-check">sys-check</button>
+          <button class="cmd-btn" data-cmd="matrix">matrix</button>
+          <button class="cmd-btn" data-cmd="theme cyber">theme cyber</button>
+          <button class="cmd-btn" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <div class="sec-head reveal">
+        <span class="sec-num">06</span>
+        <h2 class="sec-title">Certifications</h2>
+      </div>
+      <div class="cert-list reveal">
+        <div class="cert-item">Multi-Tier AI Agent Architecture | NeuralSeek</div>
+        <div class="cert-item">Agentic AI for Business | NeuralSeek</div>
+        <div class="cert-item">AWS AI Practitioner Challenge | Udacity</div>
+        <div class="cert-item">AWS AI &amp; ML Scholars 2026 | Completion</div>
+        <div class="cert-item">BCG GenAI Job Simulation | Forage</div>
+        <div class="cert-item">BCG Data Science Job Simulation | Forage</div>
+        <div class="cert-item">British Airways Data Science Simulation | Forage</div>
+        <div class="cert-item">Certified Data Science &amp; Analytics | HP</div>
+      </div>
+    </section>
+
+    <!-- Contact & Action Block -->
+    <section id="contact" style="border-bottom: 1px solid var(--border); padding-bottom: 80px;">
+      <div class="contact-inner reveal">
+        <h2 class="contact-title">Have a project in mind?<br><em>Let's build it.</em></h2>
+        <p class="contact-sub">Available for contract, freelance, and permanent engineering roles in computer vision, RAG engines, and automated AI workflow setups.</p>
+        <div class="contact-row">
+          <a class="btn btn-primary" id="copy-email-btn" href="mailto:shehryarkhan971@yahoo.com">shehryarkhan971@yahoo.com</a>
+          <button class="btn btn-ghost" id="copy-phone-btn">+923035618555</button>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/shehryar-khan-9317ba1bb" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ShehryarKhan123-ship-it" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <span class="copy-note" id="copy-notification">✓ copied +923035618555 to clipboard</span>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Shehryar Khan. All rights reserved.</span>
+      <span class="mono" style="font-size: 11px;">built_with_agentic_flow_design = true</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
